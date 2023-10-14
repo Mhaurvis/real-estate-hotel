@@ -29,11 +29,29 @@
     text-decoration: none;
     font-size: 20px;
     color: white;
+    position: relative;
 }
 
+.navLinks ul li a::after {
+    content: ''; /* Create an empty content element */
+    display: block; /* Make it a block-level element to create a line underneath */
+    width: 100%; /* Set the width to 100% to span the full width of the parent element */
+    height: 2px; /* Adjust the height as needed for the underline */
+    background-color: darkgoldenrod; /* Change the color to your preference */
+    position: absolute; /* Position it absolutely relative to the parent */
+    bottom: -10px; /* Position it at the bottom of the parent element */
+    left: 0; /* Align it to the left edge of the parent element */
+    transform: scaleX(0); /* Initially, set the line to have no width */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+  
+.navLinks ul li a:hover::after {
+    transform: scaleX(1); /* Expand the line to full width on hover */
+  }
+
 .navLinks ul li a:hover{
-    text-decoration: underline;
-    color:rgb(211, 152, 4) ;
+    content: "__________";
+    color:rgb(211, 152, 4);
     
 }
 

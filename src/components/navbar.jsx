@@ -1,4 +1,5 @@
 import React, { useState} from "react";
+import { Link } from 'react-router-dom';
 import logo1 from '../images/logo1.png';
 import '../styles/navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,11 +22,15 @@ function Navbar(){
 
             <div className={`navLinks ${isOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a className="active" href="">Home</a></li>
-                    <li><a href="">Bookings</a></li>
-                    <li><a href="">Support</a></li>
-                    {/* <li><a href="">Blog</a></li>
-                    <li><a href=""></a></li> */}
+                    <li>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link to='/booking'>Bookings</Link>
+                    </li>
+                    <li>
+                        <Link to='/support'>Supports</Link>
+                    </li>
                 </ul>
             </div>
 
