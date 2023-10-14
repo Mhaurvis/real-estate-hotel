@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Serif+4:opsz,wght@8..60,200&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-image: url("../images/headerImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.head-text{
+    position: absolute;
+    color: white;
+    top: 180px;
+    left: 40px;
+}
+
+.head-text p:nth-child(1){
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.head-text p:nth-child(2){
+    font-size: 1.3em;
+}
+
+.roomDeals{
+    padding: 6em;
+}
+
+.roomDesc{
+    align-self: center;
+    font-size: 18px;
+}
+
+.roomDesc span{
+    padding-right: 3px;
+    color: goldenrod;
+}
+
+.roomSpec{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.roomImgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.firstImg{
+    grid-column: span 4;
+}
+
+.btnRoom{
+    padding: 5px 100px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: rgb(11, 49, 29);
+    color: white;
+    font-size: 15px;
+}
+
+.ourLocation{
+    padding: 3em 60px;
+}
+
+.locations{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* position: relative; */
+}
+
+.locations img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+/* .locations img:hover{
+    font-size: x-large;
+} */
+
+.locateBtn{
+    background-color: rgb(27, 75, 49);
+    color: white;
+    padding: 3px 20px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+.discount{
+    background-color: rgba(238, 230, 163, 0.4);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+}
+
+.discount img{
+    height: 100vh;
+    width: 100%;
+}
+
+.discountText{
+    align-self: center;
+}
+
+.discountHeadText{
+    font-weight: 600;
+    font-size: 20px ;
+}
+
+.percentDiscount{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.percentDiscount span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.fifteenPercent{
+    border-right: 4px solid black;
+    padding-right: 10px;
+}
+
+.offerDiscount span{
+    color: red;
+}
+
+.discovery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 8em 6em;
+}
+
+.discoveryText{
+    align-self: center;
+}
+
+.discoveryBtn{
+    width: 100%;
+    background-color: rgb(211, 152, 4);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 6px;
+}
+
+.discoveryImgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.disImg-2{
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.newsletter{
+    background-color:rgba(238, 230, 163, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.newsletterForm{
+    display: flex;
+    align-items: center;
+}
+
+.newsletterForm input{
+    padding: 5px;
+    padding-right: 40em;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgb(37, 58, 37);
+    color: white;
+}
+
+.newsletterForm input::placeholder{
+    color: white;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width:1100px){
+    .roomDeals{
+        padding: 6em 2em;
+    }
+}
+
+@media (max-width:1000px){
+    .discovery{
+        grid-template-columns: 1fr;
+        padding:6em 2em;
+    }
+    
+    .discoveryImgs{
+        width: 100%;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 900px){
+    .locations{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .roomSpec{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .roomImgs img{
+        max-width: 100%;
+    }
+
+    .discount{
+        grid-template-columns: 1fr;
+    }
+
+    .discount img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .discountText{
+        padding: 20px;
+    }
+
+    .fifteenPercent{
+        /* border-bottom: 4px solid black;
+        border-right: 0 ; */
+        padding-bottom: 20px;
+    }
+
+    .newsletterForm input{
+        padding-right: 30em;
+    }
+}
+
+@media (max-width:750px){
+    .newsletterForm input{
+        padding-right: 10em;
+    }
+}
+
+@media (max-width: 400px){
+    .locations{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletterForm input{
+        padding-right: 1em;
+    }
+}

@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6em;
+}
+
+.footer > div{
+    margin-bottom: 2em;
+}
+
+.footer > div p:nth-child(1){
+    font-weight: 700;
+}
+
+.footer > div span{
+    padding-right: 8px;
+    font-size: 25px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
