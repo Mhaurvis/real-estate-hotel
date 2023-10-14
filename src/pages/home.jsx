@@ -92,7 +92,8 @@ function Homepage() {
                         <p>Calabar</p>
                     </div>
                 </div>
-                <button className="locateBtn">See More</button>
+                {/* <button className="locateBtn">See More</button> */}
+                <button className="btn btn-outline-success btn-sm">See More <span className="fa fa-caret-right"></span></button>
             </div>
 
             <div className="discount">

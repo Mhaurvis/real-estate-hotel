@@ -86,9 +86,16 @@
     border-radius: 1em;
 }
 
-/* .locations img:hover{
-    font-size: x-large;
-} */
+.locations p{
+    font-size: 18px;
+    font-weight: 600;
+    color: green;
+}
+
+.locations p::after{
+    content: "*";
+    color: red;
+}
 
 .locateBtn{
     background-color: rgb(27, 75, 49);
@@ -247,12 +254,6 @@
         padding: 20px;
     }
 
-    .fifteenPercent{
-        /* border-bottom: 4px solid black;
-        border-right: 0 ; */
-        padding-bottom: 20px;
-    }
-
     .newsletterForm input{
         padding-right: 30em;
     }
@@ -271,5 +272,14 @@
 
     .newsletterForm input{
         padding-right: 1em;
+    }
+}
+
+@media (max-width: 380px){
+    .fifteenPercent{
+        border-right: none;
+        border-bottom: 4px solid black;
+        padding-bottom: 40px;
+        width: 100%;
     }
 }
