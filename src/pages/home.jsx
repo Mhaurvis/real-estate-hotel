@@ -36,7 +36,7 @@ function Homepage() {
             </div>
 
             <div className="roomDeals">
-                <p style={{fontSize: '25px', fontWeight: '600'}}>Explore Exciting Room Deals</p>
+                <p style={{fontSize: '35px', fontWeight: '600'}}>Explore Exciting Room Deals</p>
                 <div className="roomSpec">
                     <div className="roomImgs">
                         <div className="firstImg">
@@ -53,7 +53,7 @@ function Homepage() {
                         </div>
                     </div>
                     <div className="roomDesc">
-                        <p style={{fontSize: '25px', fontWeight: '600'}}>Savannah Luxury Hotel</p>
+                        <p style={{fontSize: '30px', fontWeight: '600'}}>Savannah Luxury Hotel</p>
                         <span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span><span className="fa fa-star"></span>
                         <p>Musa Abba Close, Wuse 2 Abuja</p>
                         <p style={{color: 'Red', maxWidth: '100%'}}>__________________________________</p>
@@ -65,7 +65,7 @@ function Homepage() {
             </div>
 
             <div className="ourLocation">
-                <p style={{fontSize: '25px', fontWeight: '600'}}>Popular Locations</p>
+                <p style={{fontSize: '35px', fontWeight: '600'}}>Popular Locations</p>
                 <div className="locations">
                     <div>
                         <img src={abuja} alt="" />
@@ -122,7 +122,7 @@ function Homepage() {
 
             <div className="discovery">
                 <div className="discoveryText">
-                    <p style={{fontSize: '25px', fontWeight: '600'}}>Discover More Top Rated Hotels in Nigeria</p>
+                    <p style={{fontSize: '35px', fontWeight: '600'}}>Discover More Top Rated <br /> Hotels in Nigeria</p>
                     <p>These top rated hotels have been chosen for their exceptional quality, impeccable service, and extraordinary attention to detail.</p>
                     <p>Whether you're seeking a romantic getaway, a family-friendly retreat, or a luxurious business stay, you can trustthat these establishments will exceed your expectations.</p>
                     <button className="discoveryBtn">Discover More</button>
@@ -135,7 +135,7 @@ function Homepage() {
 
             <div className="newsletter">
                 <div>
-                    <p style={{fontSize: '25px', fontWeight: '600'}}>Newsletter <br /> <span style={{fontSize: '18px', fontWeight: '400'}}>Stay up to date</span></p>
+                    <p style={{fontSize: '30px', fontWeight: '600'}}>Newsletter <br /> <span style={{fontSize: '20px', fontWeight: '500'}}>Stay up to date</span></p>
                 </div>
                 <form className="newsletterForm" action="">
                     <div>

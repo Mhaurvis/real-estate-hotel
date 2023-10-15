@@ -16,7 +16,7 @@ function Navbar(){
     return(
         <div className={`myNavbar ${isOpen ? 'open' : ''}`}>
             <div className="navbrand">
-                <img src={logo1} width={100} height={120} style={{opacity: '10000'}} alt="" />
+                <img src={logo1} width={100} height={120} alt="" />
                 {/* <a href="navLogo">GeeHotel</a> */}
             </div>
 
