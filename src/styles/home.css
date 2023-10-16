@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Serif+4:opsz,wght@8..60,200&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 18px;
 }
 
 .header{
@@ -28,7 +27,25 @@
 }
 
 .head-text p:nth-child(2){
-    font-size: 1.3em;
+    font-size: 1.1em;
+}
+
+.headIns{
+    position: absolute;
+    background-color: rgba(39, 107, 107, 0.5);
+    color: white;
+    top: 350px;
+    left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headIns label{
+    font-size: 16px;
 }
 
 .roomDeals{
@@ -259,9 +276,35 @@
     }
 }
 
+@media (max-width:950px){
+    .header{
+        height: 800px;
+    }
+
+    .headIns{
+        top: 450px;
+    }
+}
+
 @media (max-width:750px){
     .newsletterForm input{
         padding-right: 10em;
+    }
+}
+
+@media (max-width:700px){
+    .header{
+        height: 1050px;
+    }
+
+    .headIns{
+        top: 550px;
+    }
+}
+
+@media (max-width:420px){
+    .headIns{
+        top: 650px;
     }
 }
 
@@ -281,5 +324,27 @@
         border-bottom: 4px solid black;
         padding-bottom: 40px;
         width: 100%;
+    }
+}
+
+@media (max-width:290px){
+    .header{
+        height: 1400px;
+        overflow-y: hidden;
+    }
+
+    .headIns{
+        top: 950px;
+    }
+}
+
+@media (max-width:215px){
+    .header{
+        height: 1700px;
+        overflow-y: hidden;
+    }
+
+    .headIns{
+        top: 1100px;
     }
 }

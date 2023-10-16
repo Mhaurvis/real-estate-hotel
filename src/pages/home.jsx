@@ -28,10 +28,21 @@ function Homepage() {
                     <p>Welcome to our hotel booking platform, where your lodging experience becomes easier and more enjoyable. With our platform, you can discover the perfect accommodation for your stay within Nigeria.</p>
                 </div>
                 <div className="headIns">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <div className="form-group">
+                        <label htmlFor=""> <span className="fa fa-map-marker"></span> Location</label>
+                        <input type="" className="form-control" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor=""> <span className="fa fa-user"></span> Guest</label>
+                        <input type="text" className="form-control" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor=""> <span className="fa fa-calendar"></span> Check-In/Out</label>
+                        <input type="date" className="form-control" />
+                    </div>
+                    <div>
+                        <button className="btn btn-success">Search <span className="fa fa-search"></span></button>
+                    </div>
                 </div>
             </div>
 
@@ -103,8 +114,8 @@ function Homepage() {
                 <div className="discountText">
                     <p className="discountHeadText">Stay Longer, Save More</p>
                     <p>Elegant and Comfortable rooms available at affordable rates.</p>
-                    <p>These rooms have queen sized beds, private bathrooms with a hairdryer. <br /> 
-                        They also have flat screen TVs, safety deposit boxes, free wifi <br /> and free breakfast through out your stay.</p>
+                    <p>These rooms have queen sized beds, private bathrooms with a hairdryer. 
+                        They also have flat screen TVs, safety deposit boxes, free wifi  and free breakfast through out your stay.</p>
 
                     <div className="percentDiscount">
                         <p className="fifteenPercent">

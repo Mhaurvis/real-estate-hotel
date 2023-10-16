@@ -1,0 +1,114 @@
+.bookHotel{
+    font-size: 18px;
+}
+
+.bookHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+.bookLinks ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.bookLinks ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    position: relative;
+}
+
+.bookLinks ul li a::after {
+    content: ''; /* Create an empty content element */
+    display: block; /* Make it a block-level element to create a line underneath */
+    width: 100%; /* Set the width to 100% to span the full width of the parent element */
+    height: 2px; /* Adjust the height as needed for the underline */
+    background-color: darkgoldenrod; /* Change the color to your preference */
+    position: absolute; /* Position it absolutely relative to the parent */
+    bottom: -10px; /* Position it at the bottom of the parent element */
+    left: 0; /* Align it to the left edge of the parent element */
+    transform: scaleX(0); /* Initially, set the line to have no width */
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+  
+.bookLinks ul li a:hover::after {
+    transform: scaleX(1); /* Expand the line to full width on hover */
+  }
+
+.bookLinks ul li a:hover{
+    content: "__________";
+    color:rgb(211, 152, 4);   
+}
+
+.bookingText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    width: 100%;
+}
+
+.bookingText p:nth-child(1){
+    font-size: 33px;
+    font-weight: 650;
+}
+
+.bookingText p:nth-child(2){
+    font-size: 18px;
+}
+
+.letsBook{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 2em;
+}
+
+.form-group input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.myDeluxe{
+    background-color: darkslategray;
+    padding: 1em;
+    color: white;
+}
+
+.deluxeSuite{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.suiteCheck{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suiteCheck input{
+    border: 1px solid gray;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.deluxeRooms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deluxeRoomss{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px){
+    .letsBook{
+        grid-template-columns: 1fr;
+    }
+}
