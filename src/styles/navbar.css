@@ -4,7 +4,6 @@
     align-items: center;
     padding: 0.5em 2em;
     color: white;
-    position: absolute;
     width: 100%;
 }
 
@@ -16,6 +15,7 @@
 .navLinks ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     gap: 40px;
     list-style-type: none;
@@ -55,6 +55,10 @@
     
 }
 
+.resBtn{
+    visibility: hidden;
+}
+
 .navButtons{
     display: flex;
     gap: 10px;
@@ -90,40 +94,35 @@
 
 @media (max-width:768px){
     .navLinks{
+       display: none;
+    }
+
+    .myNavbar.open .navLinks{
+        display: flex;
         flex-direction: column;
+    }
+
+    .myNavbar.open .navLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: -100%;
-        transition: left 0.3s ease-in-out;
-        background-color: gray;
+        padding-top: 3em;
     }
 
-    /* .navLinks .open{
-        display: block;
+    .myNavbar.open .navLinks ul li{
+        border-bottom: 1px solid darkslategrey;
+        width:100%;
+    }
+
+    .navLinks.open{
+        width: 100%;
+        height: 100vh;
         background-color: black;
-        position: absolute;
-        left: 100;
-    } */
-
-    .navLinks ul{
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 120px;
         left: 0;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-    }
-
-    .navLinks ul li{
-        text-align: center;
-        margin: 0;
-    }
-
-    .navLinks ul li a{
-        color: black;
-        width: 100%;
+        z-index: 1;
     }
 
     .navbar-toggle{
@@ -132,8 +131,12 @@
     }
 }
 
-@media (max-width:365px){
+@media (max-width:400px){
     .navButtons{
         display: none;
+    }
+
+    .resBtn{
+        visibility: visible;
     }
 }

@@ -30,7 +30,7 @@ function Homepage() {
                 <div className="headIns">
                     <div className="form-group">
                         <label htmlFor=""> <span className="fa fa-map-marker"></span> Location</label>
-                        <input type="" className="form-control" />
+                        <input type="" className="form-control" placeholder="Enter Location" />
                     </div>
                     <div className="form-group">
                         <label htmlFor=""> <span className="fa fa-user"></span> Guest</label>

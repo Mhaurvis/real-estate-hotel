@@ -1,23 +1,24 @@
 import React, { useState} from "react";
 import { Link } from 'react-router-dom';
-import logo1 from '../images/logo1.png';
+import logo from '../images/logo-bg.png';
 import '../styles/navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css' ;
+import 'font-awesome/css/font-awesome.min.css';
 
 function Navbar(){
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isOverlayVisible, setOverlayVisible] = useState(false);
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
+        setOverlayVisible(!isOverlayVisible);
     };
 
     return(
         <div className={`myNavbar ${isOpen ? 'open' : ''}`}>
-            <div className="navbrand">
-                <img src={logo1} width={100} height={120} alt="" />
-                {/* <a href="navLogo">GeeHotel</a> */}
+            <div className='navBrand'>
+                <img src={logo} width={120} height={150} alt="" />
             </div>
 
             <div className={`navLinks ${isOpen ? 'open' : ''}`}>
@@ -31,6 +32,12 @@ function Navbar(){
                     <li>
                         <Link to='/support'>Supports</Link>
                     </li>
+                    <li>
+                        <button className="nav-button signin resBtn">Sign In</button>
+                    </li>
+                    <li>
+                        <button className="nav-button register resBtn">Register</button>
+                    </li>
                 </ul>
             </div>
 
@@ -39,8 +46,8 @@ function Navbar(){
                     <button className="nav-button register">Register</button>
             </div>
 
-            <div className="navbar-toggle" onClick={toggleNavbar}>
-                    <span className={`fa ${isOpen ? 'fa-times' : 'fa-bars'}`}></span>
+            <div className="navbar-toggle">
+                    <span className={`fa ${isOpen ? 'fa-times' : 'fa-bars'}`} onClick={toggleNavbar}></span>
             </div>
             
         </div>

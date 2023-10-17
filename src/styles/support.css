@@ -1,0 +1,8 @@
+.supportHead{
+    background-image: url("../images/headerImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 150px;
+}

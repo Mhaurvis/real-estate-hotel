@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import { Link } from 'react-router-dom';
-import logobg from '../images/logo-bg.jpg';
+import logo from '../images/logo-bg.png';
 import Navbar from "../components/navbar";
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +19,7 @@ function Booking(){
         <div className="bookHotel">
            <div className="bookHeader">
                 <div>
-                    <img src={logobg} alt="hotel-logo" width={50} height={50} />
+                    <img src={logo} alt="hotel-logo" width={120} height={150}  />
                 </div>
                 <div className={`bookLinks ${isOpen ? 'open' : ''}`}>
                     <ul>
@@ -58,50 +58,57 @@ function Booking(){
                         </div>
                     </form>
                 </div>
-                <div className="myDeluxe">
-                    <div className="deluxeSuite">
-                        <img src={booking} alt="" width={150} height={100} />
+                
+                <div>
+                    <div className="myDeluxe">
+                        <div className="deluxeSuite">
+                            <img src={booking} alt="" width={150} height={100} />
+                            <div className="deluxeSuiteHeadText">
+                                <p>Exclusive Deluxe & Hotel Suite</p>
+                                <p>Mo Sandie Crescent, Garki - Abuja</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className="suiteCheck">
+                            <div>
+                                <p>Check-In/Check-Out</p>
+                                <input type="date" />
+                            </div>
+                            <div>
+                                <p>Guest(s)</p>
+                                <input type="range" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div className="deluxeRooms">
+                            <div>
+                                <p>Deluxe Room</p>
+                            </div>
+                            <div>
+                                <p>$1750</p>
+                                <p>Per Night</p>
+                                <p className="bookBtn">Select Room</p>
+                            </div>                       
+                        </div>
+                        <hr />
+                        <div className="deluxeRoomss">
                         <div>
-                            <p>Exclusive Deluxe & Hotel Suite</p>
-                            <p>Mo Sandie Crescent, Garki - Abuja</p>
+                                <p>Deluxe Room</p>
+                            </div>
+                            <div>
+                                <p>$3250</p>
+                                <p>Per Night</p>
+                                <p className="bookBtn">Select Room</p>
+                            </div>    
                         </div>
                     </div>
-                    <hr />
-                    <div className="suiteCheck">
-                        <div>
-                            <p>Check-In/Check-Out</p>
-                            <input type="date" />
-                        </div>
-                        <div>
-                            <p>Guest(s)</p>
-                            <input type="range" />
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="deluxeRooms">
-                        <div>
-                            <p>Deluxe Room</p>
-                        </div>
-                        <div>
-                            <p>$250</p>
-                            <p>Per Night</p>
-                            <p className="badge badge-pills">Book</p>
-                        </div>                       
-                    </div>
-                    <hr />
-                    <div className="deluxeRoomss">
-                    <div>
-                            <p>Deluxe Room</p>
-                        </div>
-                        <div>
-                            <p>$250</p>
-                            <p>Per Night</p>
-                            <p className="badge badge-pills">Book</p>
-                        </div>    
-                    </div>
-                </div>
 
-                <p>Hello</p>
+                    <p>Total $0</p>
+                    <a style={{color: 'red'}} href="">View more room options</a>
+                    <button className="form-control optionBtn pay"> Pay Now</button>
+                    <button className="form-control optionBtn hold">Book on Hold</button>
+
+                </div>
            </div>
         </div>
     )
