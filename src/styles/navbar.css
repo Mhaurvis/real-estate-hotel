@@ -110,10 +110,10 @@
         padding-top: 3em;
     }
 
-    .myNavbar.open .navLinks ul li{
+    /* .myNavbar.open .navLinks ul li{
         border-bottom: 1px solid darkslategrey;
         width:100%;
-    }
+    } */
 
     .navLinks.open{
         width: 100%;

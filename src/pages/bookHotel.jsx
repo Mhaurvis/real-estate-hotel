@@ -1,7 +1,6 @@
 import React, { useState} from "react";
 import { Link } from 'react-router-dom';
 import logo from '../images/logo-bg.png';
-import Navbar from "../components/navbar";
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import booking from '../images/booking.jpg';
@@ -28,6 +27,9 @@ function Booking(){
                         </li>
                         <li>
                             <Link to='/support'>Supports</Link>
+                        </li>
+                        <li>
+                            <span className="fa fa-user-circle fa-2x"></span>
                         </li>
                     </ul>
                 </div>
