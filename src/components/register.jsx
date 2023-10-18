@@ -34,7 +34,7 @@ function Register(){
                     <label htmlFor="">Confirm Password</label>
                     <input type="password" className="form-control" />
                 </div>
-                <div className="signRemember">
+                <div className="registerRemember">
                     <div><input type="checkbox" style={{marginRight: '2px'}} />Remember Password</div>
                     <div><a href="">Forgot Password</a></div>
                 </div>

@@ -26,10 +26,15 @@
     background-color: black;
 }
 
-.signRemember{
+.registerRemember{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
+}
+
+.registerRemember > div a{
+    color: rgb(211, 152, 4);
 }
 
 
@@ -40,5 +45,11 @@
 
     .registerImg{
         display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .registerRemember > div, .registerRemember > div a{
+        font-size: 15px;
     }
 }
