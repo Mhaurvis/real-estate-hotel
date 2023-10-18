@@ -18,7 +18,7 @@ function Booking(){
         <div className="bookHotel">
            <div className="bookHeader">
                 <div>
-                    <img src={logo} alt="hotel-logo" width={120} height={150}  />
+                    <img src={logo} alt="hotel-logo" width={110} height={130}  />
                 </div>
                 <div className={`bookLinks ${isOpen ? 'open' : ''}`}>
                     <ul>

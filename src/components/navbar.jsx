@@ -18,7 +18,7 @@ function Navbar(){
     return(
         <div className={`myNavbar ${isOpen ? 'open' : ''}`}>
             <div className='navBrand'>
-                <img src={logo} width={120} height={150} alt="" />
+                <img src={logo} width={110} height={130} alt="" />
             </div>
 
             <div className={`navLinks ${isOpen ? 'open' : ''}`}>
@@ -33,17 +33,17 @@ function Navbar(){
                         <Link to='/support'>Supports</Link>
                     </li>
                     <li>
-                        <button className="nav-button signin resBtn">Sign In</button>
+                        <Link to='/signin'><button className="nav-button signin">Sign In</button></Link> 
                     </li>
                     <li>
-                        <button className="nav-button register resBtn">Register</button>
+                        <Link to='/register'><button className="nav-button register">Register</button></Link>
                     </li>
                 </ul>
             </div>
 
             <div className="navButtons">
-                    <button className="nav-button signin">Sign In</button>
-                    <button className="nav-button register">Register</button>
+                   <Link to='/signin'><button className="nav-button signin">Sign In</button></Link> 
+                   <Link to='/register'><button className="nav-button register">Register</button></Link>
             </div>
 
             <div className="navbar-toggle">
