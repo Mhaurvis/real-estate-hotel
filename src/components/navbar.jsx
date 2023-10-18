@@ -8,11 +8,9 @@ import 'font-awesome/css/font-awesome.min.css';
 function Navbar(){
 
     const [isOpen, setIsOpen] = useState(false);
-    const [isOverlayVisible, setOverlayVisible] = useState(false);
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
-        setOverlayVisible(!isOverlayVisible);
     };
 
     return(
@@ -33,10 +31,10 @@ function Navbar(){
                         <Link to='/support'>Supports</Link>
                     </li>
                     <li>
-                        <Link to='/signin'><button className="nav-button signin">Sign In</button></Link> 
+                        <Link to='/signin'><button className="nav-button signin resBtn">Sign In</button></Link> 
                     </li>
                     <li>
-                        <Link to='/register'><button className="nav-button register">Register</button></Link>
+                        <Link to='/register'><button className="nav-button register resBtn">Register</button></Link>
                     </li>
                 </ul>
             </div>

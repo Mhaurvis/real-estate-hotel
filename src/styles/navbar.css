@@ -7,11 +7,6 @@
     width: 100%;
 }
 
-.navbrand{
-    display: flex;
-    align-items: center;
-}
-
 .navLinks ul{
     display: flex;
     justify-content: space-between;
@@ -52,8 +47,12 @@
 .navLinks ul li a:hover{
     content: "__________";
     color:rgb(211, 152, 4);
-    
 }
+
+/* .navLinks ul li a:visited{
+    content: "__________";
+    color:rgb(211, 152, 4);
+} */
 
 .resBtn{
     visibility: hidden;

@@ -2,29 +2,36 @@
     font-size: 18px;
 }
 
-.bookHeader{
+.booking{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
+    color: white;
+    width: 100%;
 }
 
-.bookLinks ul{
+.bookingLinks ul{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
-    gap: 25px;
+    gap: 40px;
     list-style-type: none;
 }
 
-.bookLinks ul li a{
+.active{
+    color: darkgoldenrod;
+}
+
+.bookingLinks ul li a{
     text-decoration: none;
     font-size: 18px;
     color: black;
     position: relative;
 }
 
-.bookLinks ul li a::after {
+.bookingLinks ul li a::after {
     content: ''; /* Create an empty content element */
     display: block; /* Make it a block-level element to create a line underneath */
     width: 100%; /* Set the width to 100% to span the full width of the parent element */
@@ -37,13 +44,47 @@
     transition: transform 0.2s; /* Add a smooth transition effect */
   }
   
-.bookLinks ul li a:hover::after {
+.bookingLinks ul li a:hover::after {
     transform: scaleX(1); /* Expand the line to full width on hover */
   }
 
-.bookLinks ul li a:hover{
+.bookingLinks ul li a:hover{
     content: "__________";
-    color:rgb(211, 152, 4);   
+    color:rgb(211, 152, 4);
+    
+}
+
+.resBtn{
+    visibility: hidden;
+}
+
+.bookingButtons{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.booking-button{
+    padding: 9px 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.signin{
+    border-radius: 4px;
+    background-color: rgb(211, 152, 4);
+}
+
+.register{
+    background-color: darkslategray;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.booking-toggle{
+    display: none;
 }
 
 .bookingText{
@@ -138,5 +179,56 @@
 @media (max-width: 900px){
     .letsBook{
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:768px){
+    .bookingLinks{
+       display: none;
+    }
+
+    .booking.open .bookingLinks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking.open .bookingLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em;
+    }
+
+    
+    .booking.open .bookingLinks ul li a{
+        color: white;
+    }
+    
+    
+    .bookingLinks.open{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 120px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .booking-toggle{
+        display: block;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:400px){
+    .bookingButtons{
+        display: none;
+    }
+
+    .resBtn{
+        visibility: visible;
     }
 }

@@ -16,24 +16,32 @@ function Booking(){
 
     return(
         <div className="bookHotel">
-           <div className="bookHeader">
-                <div>
-                    <img src={logo} alt="hotel-logo" width={110} height={130}  />
-                </div>
-                <div className={`bookLinks ${isOpen ? 'open' : ''}`}>
-                    <ul>
-                        <li>
-                            <Link to='/'>Home</Link>
-                        </li>
-                        <li>
-                            <Link to='/support'>Supports</Link>
-                        </li>
-                        <li>
-                            <span className="fa fa-user-circle fa-2x"></span>
-                        </li>
-                    </ul>
-                </div>
-           </div>
+ <div className={`booking ${isOpen ? 'open' : ''}`}>
+            <div className='bookingBrand'>
+                <img src={logo} width={110} height={130} alt="" />
+            </div>
+
+            <div className={`bookingLinks ${isOpen ? 'open' : ''}`}>
+                <ul>
+                    <li>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link to='/booking'>Bookings</Link>
+                    </li>
+                    <li>
+                        <Link to='/support'>Supports</Link>
+                    </li>
+                    <li>
+                        <span className="fa fa-user-circle fa-2x" style={{color: 'black'}}></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div className="booking-toggle">
+                    <span className={`fa ${isOpen ? 'fa-times' : 'fa-bars'}`} onClick={toggleNavbar}></span>
+            </div>
+            </div>
 
            <div className="bookingText">
                 <p>Get Information</p>
@@ -48,7 +56,7 @@ function Booking(){
                             <input type="text" className="form-control" placeholder="start with a title.. eg Mr, Miss, Dr, Engr etc"/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="">Email <span className="fa fa-google"></span> :</label>
+                            <label htmlFor="">Email <span className="fa fa-envelope"></span> :</label>
                             <input type="text" className="form-control" placeholder="eg *******@gmail.com" />
                         </div>
                         <div className="form-group">
@@ -112,6 +120,11 @@ function Booking(){
 
                 </div>
            </div>
+
+           <div>
+                <p style={{textAlign: 'center', fontSize: 'smaller', padding: '2em', display: 'flex', justifyContent: 'center'}}>All rights Reserved &copy; 2023 Designed by Maurice</p>
+            </div>
+
         </div>
     )
 };
