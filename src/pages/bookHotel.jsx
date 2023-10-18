@@ -32,15 +32,18 @@ function Booking(){
                     <li>
                         <Link to='/support'>Supports</Link>
                     </li>
-                    <li>
-                        <span className="fa fa-user-circle fa-2x" style={{color: 'black'}}></span>
-                    </li>
                 </ul>
             </div>
 
-            <div className="booking-toggle">
+            <div className="myUser">
+                <div className="booking-toggle">
                     <span className={`fa ${isOpen ? 'fa-times' : 'fa-bars'}`} onClick={toggleNavbar}></span>
+                </div>
+                <div>
+                    <span className="fa fa-user-circle fa-2x" style={{color: 'black'}}></span>
+                </div>
             </div>
+
             </div>
 
            <div className="bookingText">
