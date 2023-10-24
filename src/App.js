@@ -6,6 +6,7 @@ import Support from './pages/support';
 import SignIn from './components/signIn';
 import Register from './components/register';
 
+
 function App() {
   return (
     <Routes>

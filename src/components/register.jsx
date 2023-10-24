@@ -9,7 +9,9 @@ function Register(){
     return(
         <div className="registerHere">
              <div className="registerText">
-                <img src={logo} alt="" width={110} height={130} />
+                <a href="/">
+                     <img src={logo} width={110} height={130} alt="" />
+                </a>
                 <p style={{fontSize: '30px', fontWeight: '600'}}>Register Here!</p>
                 <p>This information will be used to create your account.</p>
                 <button className="form-control"> <img src={google} alt="" width={30} height={30} /> Signup with Google</button>

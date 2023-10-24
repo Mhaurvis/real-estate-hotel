@@ -18,7 +18,9 @@ function Booking(){
         <div className="bookHotel">
  <div className={`booking ${isOpen ? 'open' : ''}`}>
             <div className='bookingBrand'>
-                <img src={logo} width={110} height={130} alt="" />
+            <a href="/">
+                     <img src={logo} width={110} height={130} alt="" />
+                </a>
             </div>
 
             <div className={`bookingLinks ${isOpen ? 'open' : ''}`}>
@@ -106,7 +108,7 @@ function Booking(){
                         <hr />
                         <div className="deluxeRoomss">
                         <div>
-                                <p>Deluxe Room</p>
+                                <p>Exclusive Room</p>
                             </div>
                             <div>
                                 <p>$3250</p>

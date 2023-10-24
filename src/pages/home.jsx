@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../styles/home.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,9 +18,20 @@ import discoverImg1 from '../images/discoverImg-1.jpg';
 import discoverImg2 from '../images/discoverImg-2.jpg';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+  
 
 
 function Homepage() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 200,
+            delay: 300,
+        });
+    }, []);
+
     return(
         <div className="home">
             <div className="header">
@@ -46,7 +59,7 @@ function Homepage() {
                 </div>
             </div>
 
-            <div className="roomDeals">
+            <div className="roomDeals" data-aos="fade-up" data-aos-once="true">
                 <p style={{fontSize: '35px', fontWeight: '600'}}>Explore Exciting Room Deals</p>
                 <div className="roomSpec">
                     <div className="roomImgs">
@@ -75,7 +88,7 @@ function Homepage() {
                 </div>
             </div>
 
-            <div className="ourLocation">
+            <div className="ourLocation" data-aos="fade-up" data-aos-once="true">
                 <p style={{fontSize: '35px', fontWeight: '600'}}>Popular Locations</p>
                 <div className="locations">
                     <div>
@@ -111,7 +124,7 @@ function Homepage() {
                 <div>
                     <img src={discount} alt="" />
                 </div>
-                <div className="discountText">
+                <div className="discountText" data-aos="fade-left">
                     <p className="discountHeadText">Stay Longer, Save More</p>
                     <p>Elegant and Comfortable rooms available at affordable rates.</p>
                     <p>These rooms have queen sized beds, private bathrooms with a hairdryer. 
@@ -132,7 +145,7 @@ function Homepage() {
             </div>
 
             <div className="discovery">
-                <div className="discoveryText">
+                <div className="discoveryText" data-aos="zoom-out">
                     <p style={{fontSize: '35px', fontWeight: '600'}}>Discover More Top Rated <br /> Hotels in Nigeria</p>
                     <p>These top rated hotels have been chosen for their exceptional quality, impeccable service, and extraordinary attention to detail.</p>
                     <p>Whether you're seeking a romantic getaway, a family-friendly retreat, or a luxurious business stay, you can trustthat these establishments will exceed your expectations.</p>

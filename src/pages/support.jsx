@@ -2,7 +2,6 @@ import React, { useState} from "react";
 import { Link } from 'react-router-dom';
 import logo from '../images/logo-bg.png';
 import support from '../images/support.jpg';
-import Footer from "../components/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import '../styles/support.css';
@@ -19,7 +18,9 @@ function Support(){
         <div className="support">
             <div className={`mySupport ${isOpen ? 'open' : ''}`}>
             <div className='supportBrand'>
-                <img src={logo} width={110} height={130} alt="" />
+            <a href="/">
+                     <img src={logo} width={110} height={130} alt="" />
+                </a>
             </div>
 
             <div className={`supportLinks ${isOpen ? 'open' : ''}`}>

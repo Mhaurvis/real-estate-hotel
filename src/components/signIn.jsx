@@ -9,7 +9,9 @@ function SignIn(){
     return(
         <div className="signHere">
             <div className="signText">
-                <img src={logo} alt="" width={110} height={130} />
+                <a href="/">
+                     <img src={logo} width={110} height={130} alt="" />
+                </a>
                 <p style={{fontSize: '30px', fontWeight: '600'}}>Welcome Back!</p>
                 <button className="form-control"> <img src={google} alt="" width={30} height={30} /> Login with Google</button>
                 <div className="hr-demarcation">
