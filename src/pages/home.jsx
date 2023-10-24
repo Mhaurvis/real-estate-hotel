@@ -37,7 +37,7 @@ function Homepage() {
             <div className="header">
                 <Navbar />
                 <div className="head-text">
-                    <p>Find the Best Hotels in your city</p>
+                    <p>Find the Best Hotels in your city.</p>
                     <p>Welcome to our hotel booking platform, where your lodging experience becomes easier and more enjoyable. With our platform, you can discover the perfect accommodation for your stay within Nigeria.</p>
                 </div>
                 <div className="headIns">
