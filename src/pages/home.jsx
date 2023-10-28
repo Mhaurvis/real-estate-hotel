@@ -40,7 +40,7 @@ function Homepage() {
                     <p>Find the Best Hotels in your city.</p>
                     <p>Welcome to our hotel booking platform, where your lodging experience becomes easier and more enjoyable. With our platform, you can discover the perfect accommodation for your stay within Nigeria.</p>
                 </div>
-                <div className="headIns">
+                <div className="headIns" data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
                     <div className="form-group">
                         <label htmlFor=""> <span className="fa fa-map-marker"></span> Location</label>
                         <input type="" className="form-control" placeholder="Enter Location" />

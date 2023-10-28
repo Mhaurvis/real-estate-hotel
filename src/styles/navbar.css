@@ -4,7 +4,7 @@
     align-items: center;
     padding: 0.5em 2em;
     color: white;
-    width: 100%;
+    width: 100vw;
 }
 
 .navLinks ul{
@@ -48,11 +48,7 @@
     content: "__________";
     color:rgb(211, 152, 4);
 }
-
-/* .navLinks ul li a:visited{
-    content: "__________";
-    color:rgb(211, 152, 4);
-} */
+ 
 
 .resBtn{
     visibility: hidden;
@@ -111,11 +107,13 @@
     
     .navLinks.open{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: black;
+        /* position: relative; */
         position: fixed;
         top: 120px;
         left: 0;
+        right: 0;
         z-index: 1;
     }
 
@@ -132,5 +130,17 @@
 
     .resBtn{
         visibility: visible;
+    }
+}
+
+@media(max-width:300px){
+    .navLinks.open{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 120px;
+        left: 0;
+        z-index: 1;
     }
 }
